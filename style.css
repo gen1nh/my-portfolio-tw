@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+.font-primary {
+        font-family: "Outfit", sans-serif; /* fonte primária */
+      }
+
+      .font-secondary {
+        font-family: "Inter", sans-serif; /* fonte secundária */
+      }
+
+      .f-hover-text-outline{
+        color: #ffffff; /* amarelo */
+        text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black,
+          -1px -1px 0 black;
+        transition: all 0.2s ease;
+      }
+
+      /* Hover direto no CSS */
+      .hover-text-outline:hover {
+        color: #ffffff; /* amarelo */
+        text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black,
+          -1px -1px 0 black;
+        transition: all 0.2s ease;
+      }
+
+      /* Opcional: hover para cada cor */
+      .hover-design:hover {
+        background-color: #f24e1e;
+      }
+      .hover-code:hover {
+        background-color: #a259ff;
+      }
+      .hover-create:hover {
+        background-color: #1abcfe;
+      }
+      .hover-learn:hover {
+        background-color: #0acf83;
+      }
