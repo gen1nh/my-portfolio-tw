@@ -27,8 +27,11 @@
   <body>
     <div class="main-wrapper max-w-[1280px] px-[24px] mt-[32px] m-auto">
       <!-- ================= NAVIGATION ================= -->
-      <header class="hidden flex-col-reverse sm:flex-row xl:flex justify-between items-center h-[78px] mb-[120px]">
+      <header class="flex flex-row-reverse sm:flex-row-reverse xl:flex xl:flex-row justify-between items-center h-[78px] mb-[120px]">
         <!-- ================= BOTÃO DARK/LIGHT MODE ================= -->
+         <figure class="xl:hidden">
+          <img src="assets/Name=align-justify.png" alt="">
+         </figure>
         <div class="relative flex items-center">
           <input
             type="checkbox"
@@ -48,7 +51,7 @@
           </label>
         </div>
 
-        <nav>
+        <nav class="hidden xl:block">
           <ul class="flex gap-[24px] text-[18px] font-primary">
             <li>
               <a
