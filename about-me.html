@@ -11,16 +11,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div class="main-wrapper max-w-[1280px] px-[24px] py-[32px] m-auto">
+    <div class="main-wrapper max-w-[1280px] px-[24px] mt-[32px] m-auto">
       <!-- ================= NAVIGATION ================= -->
       <header class="flex justify-end items-center h-[78px] mb-[120px]">
-        <nav>
+        <nav class="">
           <ul class="flex gap-[24px] text-[18px] font-primary">
-            <a href="./index.html">
+            <a class="hover:bg-gray-200 px-[12px] py-[4px] rounded-full" href="./index.html">
               <li>Home</li>
             </a>
-            <li>Projects</li>
-            <a href="./about-me.html">
+            <a class="hover:bg-gray-200 px-[12px] py-[4px] rounded-full" href="">
+              <li>Projects</li>
+            <a class="bg-purple-100 hover:bg-gray-200 px-[12px] py-[4px] rounded-full" href="./about-me.html">
               <li>About me</li>
             </a>
           </ul>
@@ -30,7 +31,7 @@
       <!-- ================= HERO ================= -->
       <section>
         <div
-          class="flex flex-col md:flex-row font-primary gap-[48px] text-stone-900 font-semibold sm-[120px] mb-[120px] md:mb-[180px] text-center md:text-left"
+          class="flex flex-col md:flex-row font-primary gap-[48px] text-stone-900 font-semibold sm-[120px] mb-[120px] md:mb-[120px] text-center md:text-left"
         >
           <!-- ===== IMG PROFILE ===== -->
           <figure class="relative max-w-[240px] w-full self-center group">
@@ -49,7 +50,7 @@
           </figure>
 
           <!-- ===== TEXT HERO ===== -->
-          <h1 class="self-end text-[64px] font-primary">
+          <h1 class="text-[48px] sm:text-[48px] md:text-[64px] font-primary">
             Hi, I'm
             <span
               class="p-[4px] text-stone-900 bg-yellow-200 hover-text-outline"
@@ -74,16 +75,17 @@
         </div>
       </section>
 
+
       <section
         class="font-primary flex flex-col md:flex-row justify-center md:justify-between grid-rows-3 gap-[72px] md:gap-[24px]"
       >
         <!-- ================= EXPERIENCE ================= -->
         <div>
-          <div class="experience-title mb-[32px]">
+          <div class="experience-title mb-[18px]">
             <h2 class="text-[32px] font-medium">Experience</h2>
             <p class="text-gray-700">Employment History</p>
           </div>
-          <div class="shadow-[0_0_40px_rgba(0,0,0,0.09)] p-[16px] rounded-md">
+          <div class="p-[16px] rounded-md">
             <div class="flex gap-[16px]">
               <figure class="max-w-[48px] w-full self-start">
                 <img class="rounded-[6px]" src="assets/jav.svg" alt="" />
@@ -104,13 +106,13 @@
 
         <!-- ================= PROJECTS ================= -->
         <div>
-          <div class="experience-title mb-[32px]">
+          <div class="experience-title mb-[18px] px-[28px]">
             <h2 class="text-[32px] font-medium">Projects</h2>
             <p class="text-gray-700">Personal and Academic</p>
           </div>
 
           <div
-            class="grid grid-cols-1 gap-[24px] shadow-[0_0_40px_rgba(0,0,0,0.09)] p-[16px] rounded-md"
+            class="grid grid-cols-1 gap-[24px] p-[16px] rounded-md"
           >
             <!-- CARD-01 -->
             <div
@@ -184,13 +186,13 @@
 
         <!-- ================= CERTIFICATES ================= -->
         <div class="">
-          <div class="experience-title mb-[32px]">
+          <div class="experience-title mb-[18px] px-[28px]">
             <h2 class="text-[32px] font-medium">Certificates</h2>
             <p class="text-gray-700">Courses and Achievements</p>
           </div>
 
           <div
-            class="grid grid-cols-1 shadow-[0_0_40px_rgba(0,0,0,0.09)] p-[16px] rounded-md"
+            class="grid grid-cols-1 gap-2 p-[16px] rounded-md"
           >
             <!-- CARD-01 -->
             <div
@@ -319,7 +321,9 @@
           </div>
         </div>
       </section>
-    </div>
+
+      
+          <hr class="mt-[120px] mb-[60px] text-gray-200">
 
     <!-- ================= FOOTER ================= -->
     <footer>
@@ -337,5 +341,7 @@
         </figure>
       </div>
     </footer>
+    </div>
+
   </body>
 </html>
