@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  background-color: white;
+}
+
 .font-primary {
   font-family: "Outfit", sans-serif; /* fonte primária */
 }
