@@ -50,3 +50,35 @@ body {
   top: 0;
   left: 0;
 }
+
+/* Light mode padrão já definido nos elementos */
+body {
+  background-color: #fff;
+  color: #111;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+
+header {
+  background-color: transparent;
+}
+
+body.dark-mode a:hover {
+  background-color: #333;
+}
+
+/* Exemplo de classe de hover customizada para mobile */
+.hovered,
+.hover-design:hover,
+.hover-code:hover,
+.hover-create:hover,
+.hover-learn:hover {
+  /* Coloque aqui o mesmo que você usa no :hover */
+  filter: brightness(0.85) drop-shadow(0 0 6px #c4aaff);
+  /* Ou qualquer outro efeito visual */
+  transition: filter 0.3s;
+}
