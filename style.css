@@ -68,6 +68,23 @@ body.dark-mode {
   color: #fff;
 }
 
+/* Dark mode */
+body.dark-mode h1{
+  background-color: #111;
+  color: #fff;
+}
+
+/* Dark mode */
+body.dark-mode p{
+  background-color: #111;
+  color: #fff;
+}
+
+/* Dark mode */
+body.dark-mode a {
+  color: #000000;
+}
+
 header {
   background-color: transparent;
 }
