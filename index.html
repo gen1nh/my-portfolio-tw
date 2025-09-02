@@ -1,111 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Geninho</title>
 
-    <!-- GOOGLE FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Geninho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- ICONES (Font Awesome) -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      rel="stylesheet"
-    />
+<body>
+  <div class="main-wrapper max-w-[1280px] px-[24px] mt-[32px] m-auto">
+    <!-- Navigation -->
+    <header class="hidden flex-col-reverse sm:flex-row xl:flex justify-between items-center h-[78px] mb-[120px]">
+      <!-- Botão Dark/Light Mode -->
+      <div class="relative flex items-center">
+        <input type="checkbox" class="checkbox absolute opacity-0 w-0 h-0 cursor-pointer" id="chk" title="Alternar opção" />
+        <label for="chk" class="flex items-center justify-between bg-stone-900 rounded-full w-[60px] h-[28px] p-[4px] cursor-pointer">
+          <i class="fas fa-moon text-yellow-400"></i>
+          <i class="fas fa-sun text-orange-300"></i>
+          <div class="ball absolute left-[4px] top-[4px] w-[20px] h-[20px] bg-white rounded-full transition-all duration-300"></div>
+        </label>
+      </div>
 
-    <!-- TAILWIND VIA CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+      <nav>
+        <ul class="flex gap-[24px] text-[18px] font-primary">
+          <li>
+            <a class="bg-purple-100 hover:bg-gray-200 px-[12px] py-[4px] rounded-full" href="./index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="hover:bg-gray-200 px-[12px] py-[4px] rounded-full" href="">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a class="hover:bg-gray-200 px-[12px] py-[4px] rounded-full" href="./about-me.html">
+              About me
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- ESTILO PERSONALIZADO -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <div class="main-wrapper max-w-[1280px] px-[24px] mt-[32px] m-auto">
-      <!-- ================= NAVIGATION ================= -->
-      <header class="hidden flex-col-reverse sm:flex-row xl:flex justify-between items-center h-[78px] mb-[120px]">
-        <!-- ================= BOTÃO DARK/LIGHT MODE ================= -->
-        <div class="relative flex items-center">
-          <input
-            type="checkbox"
-            class="checkbox absolute opacity-0 w-0 h-0 cursor-pointer"
-            id="chk"
-            title="Alternar opção"
-          />
-          <label
-            for="chk"
-            class="flex items-center justify-between bg-stone-900 rounded-full w-[60px] h-[28px] p-[4px] cursor-pointer"
-          >
-            <i class="fas fa-moon text-yellow-400"></i>
-            <i class="fas fa-sun text-orange-300"></i>
-            <div
-              class="ball absolute left-[4px] top-[4px] w-[20px] h-[20px] bg-white rounded-full transition-all duration-300"
-            ></div>
-          </label>
-        </div>
-
-        <nav>
-          <ul class="flex gap-[24px] text-[18px] font-primary">
-            <li>
-              <a
-                class="bg-purple-100 hover:bg-gray-200 px-[12px] py-[4px] rounded-full"
-                href="./index.html"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                class="hover:bg-gray-200 px-[12px] py-[4px] rounded-full"
-                href=""
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                class="hover:bg-gray-200 px-[12px] py-[4px] rounded-full"
-                href="./about-me.html"
-              >
-                About me
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <!-- ================= HERO ================= -->
+    <!-- Hero -->
+    <main>
       <section>
-        <div
-          class="flex flex-col font-primary text-stone-900 font-semibold mb-[120px] text-center md:text-left"
-        >
+        <div class="flex flex-col font-primary text-stone-900 font-semibold mb-[120px] text-center md:text-left">
           <h1 class="text-[48px] md:text-[64px] font-primary">
             Hi, I'm
-            <span
-              class="p-[4px] text-stone-900 bg-yellow-200 hover-text-outline"
-              >Geninho</span
-            >
+            <span class="p-[4px] text-stone-900 bg-yellow-200 hover-text-outline">Geninho</span>
             <br />
             I
-            <span class="px-1 text-outline f-hover-text-outline hover-design"
-              >design</span
-            >,
-            <span class="px-1 text-outline f-hover-text-outline hover-code"
-              >code</span
-            >,
-            <span class="px-1 text-outline f-hover-text-outline hover-create"
-              >create</span
-            >
+            <span class="px-1 text-outline f-hover-text-outline hover-design">design</span>,
+            <span class="px-1 text-outline f-hover-text-outline hover-code">code</span>,
+            <span class="px-1 text-outline f-hover-text-outline hover-create">create</span>
             &
-            <span class="px-1 text-outline f-hover-text-outline hover-learn"
-              >learn</span
-            >.
+            <span class="px-1 text-outline f-hover-text-outline hover-learn">learn</span>.
           </h1>
-
           <p class="text-[16px] font-light">
             I'm a Product Designer and aspiring Mobile Developer living in
             Brazil, with experience creating UX/UI designs and visual solutions.
@@ -115,128 +71,83 @@
           </p>
         </div>
       </section>
-
-      <!-- ================= RECENT WORK ================= -->
+      <!-- Recent Work -->
       <section class="mb-[120px]">
         <div class="font-primary">
           <h2 class="font-light text-[16px] text-stone-600 mb-[24px]">
             MY RECENT WORK
           </h2>
-
-          <!-- PROJECT 01 -->
-          <div
-            class="flex flex-col-reverse gap-[40px] mb-[40px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] rounded-xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] hover:-translate-y-2 hover:cursor-pointer transition-all duration-300 lg:flex-row-reverse"
-          >
-            <div
-              class="w-full max-w-[376px] mb-[40px] text-center mx-auto lg:mx-0 lg:text-left lg:pr-[40px] content-center"
-            >
+          <!-- Project 01 -->
+          <div class="flex flex-col-reverse gap-[40px] mb-[40px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] rounded-xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] hover:-translate-y-2 hover:cursor-pointer transition-all duration-300 lg:flex-row-reverse">
+            <div class="w-full max-w-[376px] mb-[40px] text-center mx-auto lg:mx-0 lg:text-left lg:pr-[40px] content-center">
               <h3 class="font-medium text-[18px] mb-[14px] lg:text-[24px]">
                 Mobile - Manager App UI
               </h3>
-              <p
-                class="font-light pl-[12px] text-[14px] mb-[20px] lg:text-[16px] lg:pl-0"
-              >
+              <p class="font-light pl-[12px] text-[14px] mb-[20px] lg:text-[16px] lg:pl-0">
                 A meal management app focused on usability and visual
                 organization. Users can log meals and track history easily.
               </p>
-              <p
-                class="font-light px-[12px] text-[14px] mb-[20px] lg:text-[16px] lg:pl-0"
-              >
+              <p class="font-light px-[12px] text-[14px] mb-[20px] lg:text-[16px] lg:pl-0">
                 The design emphasizes minimalism, clear typography, and
                 illustrative icons.
               </p>
-              <p
-                class="font-light px-[12px] text-[14px] lg:text-[16px] lg:pl-0"
-              >
+              <p class="font-light px-[12px] text-[14px] lg:text-[16px] lg:pl-0">
                 My role included user flows, wireframes, and high-fidelity
                 prototypes.
               </p>
             </div>
             <figure>
-              <img
-                class="w-[100%]"
-                src="assets/01.png"
-                alt="UI design do aplicativo de gestão de refeições"
-              />
+              <img class="w-[100%]" src="assets/01.png" alt="UI design do aplicativo de gestão de refeições" />
             </figure>
           </div>
-
-          <!-- PROJECT 02 -->
-          <div
-            class="flex flex-col-reverse gap-[40px] mb-[40px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] rounded-xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] hover:-translate-y-2 hover:cursor-pointer transition-all duration-300 lg:flex-row-reverse"
-          >
-            <div
-              class="w-full max-w-[376px] mb-[40px] text-center mx-auto lg:mx-0 lg:text-left lg:pr-[40px] content-center"
-            >
+          <!-- Project 02 -->
+          <div class="flex flex-col-reverse gap-[40px] mb-[40px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] rounded-xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] hover:-translate-y-2 hover:cursor-pointer transition-all duration-300 lg:flex-row-reverse">
+            <div class="w-full max-w-[376px] mb-[40px] text-center mx-auto lg:mx-0 lg:text-left lg:pr-[40px] content-center">
               <h3 class="font-medium text-[18px] lg:text-[24px]">
                 Mobile - Farms App UI
               </h3>
-              <p
-                class="font-light pl-[12px] text-[14px] mb-[20px] lg:text-[16px] lg:pl-0"
-              >
+              <p class="font-light pl-[12px] text-[14px] mb-[20px] lg:text-[16px] lg:pl-0">
                 A farm management app for viewing reports on farms, feed
                 troughs, and performance metrics. Users can easily access data
                 summaries and monitor farm efficiency.
               </p>
-              <p
-                class="font-light pl-[12px] text-[14px] lg:text-[16px] lg:pl-0"
-              >
+              <p class="font-light pl-[12px] text-[14px] lg:text-[16px] lg:pl-0">
                 The design focuses on clarity, minimalism, and intuitive
                 navigation, ensuring key information is quickly accessible.
               </p>
             </div>
             <figure>
-              <img
-                class="w-[100%]"
-                src="assets/02.png"
-                alt="UI design do aplicativo de gestão de fazendas"
-              />
+              <img class="w-[100%]" src="assets/02.png" alt="UI design do aplicativo de gestão de fazendas" />
             </figure>
           </div>
         </div>
       </section>
+    </main>
 
-      <hr class="mt-[120px] mb-[60px] text-gray-200" />
+    <hr class="mt-[120px] mb-[60px] text-gray-200" />
 
-      <!-- FOOTER -->
-      <footer>
-        <div class="flex justify-center mb-[60px]">
-          <figure class="flex gap-[24px]">
-            <a
-              href="https://github.com/gen1nh"
-              target="_blank"
-              aria-label="GitHub de Geninho"
-            >
-              <img
-                src="assets/Item → Link → Ícone do GitHub.svg"
-                alt="GitHub logo"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/gen1nh/"
-              target="_blank"
-              aria-label="Instagram de Geninho"
-            >
-              <img
-                src="assets/Item → Link → Ícone do Instagram.svg"
-                alt="Instagram logo"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/gen1nh/"
-              target="_blank"
-              aria-label="LinkedIn de Geninho"
-            >
-              <img
-                src="assets/Item → Link → Ícone do LinkedIn.svg"
-                alt="LinkedIn logo"
-              />
-            </a>
-          </figure>
-        </div>
-      </footer>
-      <!-- ================= SCRIPT ================= -->
-      <script src="script.js"></script>
-    </div>
-  </body>
+    <!-- Footer -->
+    <footer>
+      <div class="flex justify-center mb-[60px]">
+        <figure class="flex gap-[24px]">
+          <a href="https://github.com/gen1nh" target="_blank" aria-label="GitHub de Geninho">
+            <img src="assets/Item → Link → Ícone do GitHub.svg" alt="GitHub logo" />
+          </a>
+          <a href="https://www.instagram.com/gen1nh/" target="_blank" aria-label="Instagram de Geninho">
+            <img src="assets/Item → Link → Ícone do Instagram.svg" alt="Instagram logo" />
+          </a>
+          <a href="https://www.linkedin.com/in/gen1nh/" target="_blank" aria-label="LinkedIn de Geninho">
+            <img src="assets/Item → Link → Ícone do LinkedIn.svg" alt="LinkedIn logo" />
+          </a>
+        </figure>
+      </div>
+    </footer>
+    <!-- Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/JavaScript/script.js"></script>
+  </div>
+</body>
+
 </html>
+

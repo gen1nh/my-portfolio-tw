@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 body {
   background-color: white;
 }
